@@ -5,35 +5,35 @@ import video2 from "./demo2.mp4";
 import video3 from "./demo3.mp4";
 import video4 from "./demo4.mp4";
 import video5 from "./demo5.mp4";
-import logo1 from "./ivy dark.png";
-import logo2 from "./ivy white.png";
+import logo2 from "./ivy dark.png";
+import logo1 from "./ivy white.png";
 import Hamburger from "hamburger-react";
 
 const videos = [
     {
         src: video1,
-        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-        logo: logo1,
+        text: "OUR VALUES INFORM EVERYHTING WE DO",
+        logo: logo2,
     },
     {
         src: video2,
-        text: "dolor sit amet consectetur adipisicing elit.",
+        text: "WE CREATE OPPORTUNITIES USING DATA AND AI",
         logo: logo2,
     },
     {
         src: video3,
-        text: "orem ipsum, dolor sit amet consectetur ",
-        logo: logo1,
+        text: "WE PROVIDE OUTSTADING SERVICES & EXPERIENCES",
+        logo: logo2,
     },
     {
         src: video4,
-        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+        text: "WE ARE DEDICATED TO DELIVERING RESULTS FOR OUR CLIENTS",
         logo: logo2,
     },
     {
         src: video5,
-        text: ", dolor sit amet consectetur adipisicing elit.",
-        logo: logo1,
+        text: "WE ARE HERE TO SERVE THE COMMUNITY",
+        logo: logo2,
     },
 ];
 
@@ -67,8 +67,9 @@ function App() {
                 </div>
                 {/* <h2 className="logo">IVY BENEFITS</h2> */}
                 <Hamburger
+                    color="#0e3544"
                     distance="sm"
-                    size={30}
+                    size={35}
                     className="btn"
                     toggled={showContactScreen}
                     toggle={toggleContactScreen}
