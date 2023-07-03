@@ -157,7 +157,7 @@ const videos = [
     },
     {
         src: video5,
-        text: "WE ARE HERE TO SERVE THE COMMUNITY",
+        text: "WE ARE HERE TO SERVE OUR CLIENTS",
         logo: logo2,
     },
 ];
@@ -224,7 +224,14 @@ function App() {
                 </div>
             ) : (
                 <>
-                    <VideoPlayer src={videos[currentVideoIndex].src} />
+                    {videos.map((video, index) => (
+                        <VideoPlayer
+                            key={index}
+                            src={video.src}
+                            isActive={index === currentVideoIndex}
+                        />
+                    ))}
+                    {/* <VideoPlayer src={videos[currentVideoIndex].src} /> */}
 
                     <p>{videos[currentVideoIndex].text}</p>
 
@@ -245,7 +252,16 @@ function App() {
     );
 }
 
-function VideoPlayer({ src }) {
+// function VideoPlayer({ src }) {
+//     const ref = useRef();
+
+//     useEffect(() => {
+//         if (ref.current) {
+//             ref.current.src = src;
+//             ref.current.load();
+//         }
+//     }, [src]);
+function VideoPlayer({ src, isActive }) {
     const ref = useRef();
 
     useEffect(() => {
@@ -254,9 +270,15 @@ function VideoPlayer({ src }) {
             ref.current.load();
         }
     }, [src]);
-
     return (
-        <video className="background-video" ref={ref} autoPlay loop muted>
+        <video
+            className={`background-video ${isActive ? "active" : ""}`}
+            ref={ref}
+            autoPlay
+            loop
+            muted
+            preload="auto"
+        >
             <source src={src} type="video/mp4" />
         </video>
     );
