@@ -125,11 +125,11 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
-import video1 from "./demo.mp4";
-import video2 from "./demo2.mp4";
-import video3 from "./demo3.mp4";
-import video4 from "./demo4.mp4";
-import video5 from "./demo5.mp4";
+import video1 from "./1v3.mp4";
+import video2 from "./2v2.mp4";
+import video3 from "./3 v3.mp4";
+import video4 from "./4v3.mp4";
+import video5 from "./5v3.mp4";
 import logo2 from "./ivy dark.png";
 import logo1 from "./ivy white.png";
 import Hamburger from "hamburger-react";
@@ -152,7 +152,7 @@ const videos = [
     },
     {
         src: video4,
-        text: "WE ARE DEDICATED TO DELIVERING RESULTS FOR OUR CLIENTS",
+        text: "WE ARE DEDICATED TO DELIVERING RESULTS",
         logo: logo2,
     },
     {
