@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./App.css";
-import video1 from "./1v3.mp4";
-import video2 from "./2v2.mp4";
-import video3 from "./3 v3.mp4";
-import video4 from "./4v3.mp4";
-import video5 from "./5v3.mp4";
+import "./app.css";
+import video1 from "./demo.mp4";
+import video2 from "./demo2.mp4";
+import video3 from "./demo3.mp4";
+import video4 from "./demo4.mp4";
+import video5 from "./demo5.mp4";
 import logo2 from "./ivy dark.png";
 import Hamburger from "hamburger-react";
 
@@ -105,20 +105,22 @@ function App() {
                             isActive={index === currentVideoIndex}
                         />
                     ))}
-                    {/* <VideoPlayer src={videos[currentVideoIndex].src} /> */}
+                    <div className="content-container">
+                        <p>{videos[currentVideoIndex].text}</p>
 
-                    <p>{videos[currentVideoIndex].text}</p>
-
-                    <div className="pagination">
-                        {videos.map((_, index) => (
-                            <button
-                                key={index}
-                                className={`dot ${
-                                    index === currentVideoIndex ? "active" : ""
-                                }`}
-                                onClick={() => handlePaginationClick(index)}
-                            />
-                        ))}
+                        <div className="pagination">
+                            {videos.map((_, index) => (
+                                <button
+                                    key={index}
+                                    className={`dot ${
+                                        index === currentVideoIndex
+                                            ? "active"
+                                            : ""
+                                    }`}
+                                    onClick={() => handlePaginationClick(index)}
+                                />
+                            ))}
+                        </div>
                     </div>
                 </>
             )}
@@ -126,15 +128,6 @@ function App() {
     );
 }
 
-// function VideoPlayer({ src }) {
-//     const ref = useRef();
-
-//     useEffect(() => {
-//         if (ref.current) {
-//             ref.current.src = src;
-//             ref.current.load();
-//         }
-//     }, [src]);
 function VideoPlayer({ src, isActive }) {
     const ref = useRef();
 
