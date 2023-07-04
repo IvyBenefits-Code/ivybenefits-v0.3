@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./app.css";
+import "./App.css";
 import video1 from "./demo.mp4";
 import video2 from "./demo2.mp4";
 import video3 from "./demo3.mp4";
