@@ -75,6 +75,7 @@ p {
     z-index: 1;
     height: 15rem;
     width: 50rem;
+    font-family: proxima-nova, sans-serif;
     font-size: 3rem;
     font-weight: 700;
     color: #fef0dc;
