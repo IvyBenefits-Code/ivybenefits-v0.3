@@ -72,10 +72,10 @@ p {
     bottom: 11%;
     left: 10%;
 
-    /* text-shadow: -1px -1px 0 #0e3544, 1px -1px 0 #0e3544, -1px 1px 0 #0e3544,
-        1px 1px 0 #0e3544; */
+    /* text-shadow: 1px -2px 0 #0e3544, 1px -1px 0 #0e3544, 1px -1px 0 #0e3544,
+        1px -1px 0 #0e3544; */
 
-    text-shadow: 6px 5px #0e3544;
+    text-shadow: 3px 3px #0e3544;
     letter-spacing: -4px;
 
     z-index: 1;
@@ -107,9 +107,9 @@ p {
     background: white;
     opacity: 0.9;
     cursor: pointer;
-    padding-top: 2px;
-    padding-right: 9px;
-    padding-bottom: 13px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 7px;
     padding-left: 7px;
     background-color: #0e3544;
 }
@@ -160,6 +160,7 @@ p {
         left: 5%;
         font-size: 2rem;
         letter-spacing: -1px;
+        text-shadow: 2px 2px #0e3544;
         line-height: 1;
         width: fit-content;
     }
