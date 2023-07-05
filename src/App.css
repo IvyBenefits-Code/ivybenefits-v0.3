@@ -72,8 +72,8 @@ p {
     bottom: 11%;
     left: 10%;
 
-    /* text-shadow: -1px -1px 0 #0e3544, 1px -1px 0 #0e3544, -1px 1px 0 #0e3544,
-        1px 1px 0 #0e3544; */
+    /* text-shadow: 1px -2px 0 #0e3544, 1px -1px 0 #0e3544, 1px -1px 0 #0e3544,
+        1px -1px 0 #0e3544; */
 
     text-shadow: 3px 3px #0e3544;
     letter-spacing: -4px;
@@ -161,6 +161,7 @@ p {
         text-shadow: 2px 2px #0e3544;
         font-size: 2rem;
         letter-spacing: -1px;
+        text-shadow: 2px 2px #0e3544;
         line-height: 1;
         width: fit-content;
     }
