@@ -7,6 +7,7 @@ import video4 from "./demo4.mp4";
 import video5 from "./demo5.mp4";
 import logo2 from "./ivy dark.png";
 import Hamburger from "hamburger-react";
+import GoogleTagManager from "./GoogleTagManager";
 
 const videos = [
     {
@@ -124,6 +125,7 @@ function App() {
                     </div>
                 </>
             )}
+            <GoogleTagManager />
         </div>
     );
 }
